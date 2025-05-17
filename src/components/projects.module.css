@@ -1,0 +1,57 @@
+
+.wrapper{
+    width: 850px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionContent{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0,1f));
+}
+
+.impDisplay{
+    max-width: 100%;
+    object-fit: contain;
+    position:relative;
+    transition-duration: 300ms;
+}
+
+.img{
+    max-width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition-duration: 300ms;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 4px;
+}
+.overlayHeader {
+    font-size: 500;
+    text-decoration: underline;
+}
+.imgDisplay:hover .overlay{
+    opacity: 0.5;
+}
+.button{
+    cursor: pointer;
+    transition-duration: 300ms;
+    color: inherit;
+}
+.button:hover {
+    transform: scale(1.1);
+}
+@media(min-width:640px) {
+    .sectionContent{
+      
+    }
+}
