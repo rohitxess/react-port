@@ -1,39 +1,44 @@
-headerText{
+.headerText {
     width: 100%;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 8px 20px;
+    padding: 40px 20px;
+
 }
 
-.line{
-    height:2px;
+.wrapper {
+    width: 850px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line {
+    height: 2px;
     background: #0f172a;
     flex: 1;
-
 }
 
-.text{
+.text {
     font-weight: 800;
-    font-size: 2 rem;
-    -webkit-text-stroke: 1px black;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1.5px #0f172a;
     -webkit-text-fill-color: transparent;
 }
 
-.sectionConent{
+.sectionContent {
     display: flex;
     flex-direction: column;
-    list-style-position: inside;
     width: 100%;
-    background: green;
-    padding: 20px;
+    padding: 0 20px;
     gap: 30px;
-
 }
 
-
-@media (min-width: 640px){
-    .sectionConent{
+@media (min-width: 640px) {
+    .sectionContent {
         padding: 0 50px;
+
     }
 }

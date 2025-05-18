@@ -1,5 +1,6 @@
 import SectionIntroduction from "./SectionIntroduction";
-import styles from './projects.module.css'
+import styles from './projects.module.css';
+import ImgOverlay from './ImgOverlay';
 // import the images here 
 
 export default function Projects () {
@@ -8,11 +9,27 @@ export default function Projects () {
             <div className={styles.wrapper}>
                 <SectionIntroduction >PROJECTS</SectionIntroduction>
                 <div className={styles.sectionContent}>
-                    <div className={styles.impDisplay}>
-                        <img src="" alt=""></img>
-                        <img></img>
-                        <img></img>
-                    </div>
+                    <ImgOverlay
+                    imgSrc={""}
+                    title={""}
+                    projectLink={""}
+                    githubLink>                 
+                    Online clothing store build with react and node js 
+                    </ImgOverlay>
+                    <ImgOverlay
+                    imgSrc={""}
+                    title={""}
+                    projectLink={""}
+                    githubLink>                 
+                    Online clothing store build with react and node js 
+                    </ImgOverlay>
+                    <ImgOverlay
+                    imgSrc={""}
+                    title={""}
+                    projectLink={""}
+                    githubLink>                 
+                    Online clothing store build with react and node js 
+                    </ImgOverlay>
                 </div>
             </div>
         </ section>
